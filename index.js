@@ -29,4 +29,4 @@ fs.readdir('./Routes/', (err, files) => {
   })
 })
 
-Client.login(process.env.BOT_TOKEN)
+Client.login("ODM1Njg0ODMyMzc3MDQ0OTky.YITCJg.X8LrJb_Do2Un6v--i_CH6GpApCQ")
