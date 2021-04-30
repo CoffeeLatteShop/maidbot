@@ -6,7 +6,7 @@ const { Client, Message } = require('@components/DiscordClient') // eslint-disab
  * @param {string[]} args
  */
 module.exports = async (client, message, args) => {
-  const ijoIjo = message.guild.roles.get(837586833377984512)
+  const ijoIjo = message.guild.roles.get('837596979080331324')
   const author = message.author
   const guild = message.guild
 
