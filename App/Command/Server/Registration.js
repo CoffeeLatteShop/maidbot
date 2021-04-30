@@ -6,7 +6,7 @@ const { Client, Message } = require('@components/DiscordClient') // eslint-disab
  * @param {string[]} args
  */
 module.exports = async (client, message, args) => {
-  const ijoIjo = message.guild.roles.get('433968434376736770')
+  const ijoIjo = message.guild.roles.get('837586833377984512')
   const author = message.author
   const guild = message.guild
 
@@ -40,7 +40,7 @@ module.exports = async (client, message, args) => {
           } else {
             await guild.members.get(author.id).addRole(ijoIjo)
             await authorMsg.send(
-              'Anda telah berhasil terverifikasi. Selamat bermain, dan jangan lupa untuk selalu cek **<#433972979047596043>** untuk peraturan server ini dan **<#433974977868464150>** untuk info penting dari server ini.'
+              'Anda telah berhasil terverifikasi. Selamat bermain, dan jangan lupa untuk selalu cek **<#819980484183851098>** untuk peraturan server ini dan **<#817660010003431434>** untuk info penting dari server ini.'
             )
           }
         })
