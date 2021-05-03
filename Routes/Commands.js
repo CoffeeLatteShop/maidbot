@@ -84,9 +84,16 @@ module.exports = (client) => {
         { require: ['userID', 'userMention'] }
       ]
     })
-    Router.load('Rape', {
-      command: ['rape'],
-      description: 'Tukang grepe kamu . . . -w-',
+    Router.load('Kiss', {
+      command: ['kiss', 'chu'],
+      description: 'Kamu bisa cium orang lain, atau diri sendiri >w<',
+      usage: [
+        { require: ['userID', 'userMention'] }
+      ]
+    })
+    Router.load('Hug', {
+      command: ['hug'],
+      description: 'Kamu bisa peluk orang lain, atau diri sendiri >w<',
       usage: [
         { require: ['userID', 'userMention'] }
       ]
