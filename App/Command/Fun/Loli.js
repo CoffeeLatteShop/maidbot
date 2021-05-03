@@ -15,8 +15,8 @@ module.exports = (client, message, args) => {
     guild.members.get(args[0]) ||
     guild.members.get(message.author.id)
   
-  message.channel.send(`<@${member.user.id}> ARE YOU SERIOUS?! \nGO TO HELL !!!`)
+  message.channel.send(`@here Here's the lolicon! <@${member.user.id}>`)
     .then(msg => {
-      message.channel.send(`https://tenor.com/view/skeleton-burning-hell-pain-gif-17379863`)
+      message.channel.send(`https://tenor.com/view/traffic-fbi-open-up-raid-gif-13450966`)
     })
 }
