@@ -29,7 +29,6 @@ module.exports = (client) => {
     Router.load('Fun', {
       command: ['fun'],
       description: 'null.',
-      moderating: false,
       usage: [
         { require: ['userID', 'userMention'] }
       ]
