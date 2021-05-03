@@ -15,7 +15,7 @@ module.exports = (client, message, args) => {
     guild.members.get(args[0]) ||
     guild.members.get(message.author.id)
   
-  message.channel.send(`<@!${member.user.tag}>, Kamu saya bakar pakai api neraka ya! :fire::fire::fire:`)
+  message.channel.send(`<@${member.user.id}>, Kamu saya bakar pakai api neraka ya! :fire::fire::fire:`)
     .then(msg => {
       message.channel.send(`https://tenor.com/view/coki-pardede-majelis-lucu-on-fire-dancing-gif-16618017`)
     })
