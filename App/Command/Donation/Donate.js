@@ -15,7 +15,7 @@ module.exports = (client, message, args) => {
     guild.members.get(args[0]) ||
     guild.members.get(message.author.id)
   
-  message.channel.send(`<@${member.user.id}>, Kamu bisa donasikan uang kamu di:`)
+  message.channel.send(`<@${member.user.id}>, Kamu bisa donasikan uang ke papahku <@281055644939714560> di:`)
     .then(msg => {
       message.channel.send("https://ko-fi.com/itsukisuki \nhttps://www.patreon.com/Itsukisuki \nhttps://trakteer.id/itsukiworks")
     })
