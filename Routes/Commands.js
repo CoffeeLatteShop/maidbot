@@ -130,8 +130,8 @@ module.exports = (client) => {
       command: 'rate',
       description: 'Ngerate apa yang kamu punya',
       usage: [
-        { require: 'reason'}
-        ],
+        { optional: 'reason' }
+      ]
     })
   })
 
