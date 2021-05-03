@@ -21,8 +21,8 @@ module.exports = (client, message, args) => {
     let answer = answers[Math.floor(Math.random() * answers.length)];
   
     if (args[0]) {
-        message.channel.reply(answer);
+        message.channel.send(answer);
     } else {
-        message.channel.reply("Kasih dong apa yang mau di rate")
+        message.channel.send("Kasih dong apa yang mau di rate")
     }
 }
