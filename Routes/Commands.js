@@ -71,6 +71,19 @@ module.exports = (client) => {
       description: 'Sudah berapa lama bot ini begadang?'
     })
   })
+  
+  /**
+   * Fun Bot
+   * Ini buat fun ye wkwk.
+   */
+  Router.group('Fun').then(Router => {
+    Router.load('Burn', {
+      command: ['burn', 'hell'],
+      description: 'mau bakar temen? mau bakar diri sendiri?',
+      usage: [
+        { optional: ['userID', 'userMention'] }
+      ]
+  })
 
   /**
    * Moderating Bot
