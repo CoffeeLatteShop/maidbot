@@ -84,6 +84,13 @@ module.exports = (client) => {
         { require: ['userID', 'userMention'] }
       ]
     })
+    Router.load('Rape', {
+      command: ['rape'],
+      description: 'Tukang grepe kamu . . . -w-',
+      usage: [
+        { require: ['userID', 'userMention'] }
+      ]
+    })
   })
 
   /**
