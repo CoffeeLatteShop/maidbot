@@ -26,13 +26,6 @@ module.exports = (client) => {
         { require: ['blockCode'] }
       ]
     })
-    Router.load('Fun', {
-      command: ['fun'],
-      description: 'null.',
-      usage: [
-        { require: ['userID', 'userMention'] }
-      ]
-    })
   })
 
   /**
