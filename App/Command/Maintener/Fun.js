@@ -8,7 +8,7 @@ const { Role, GuildMember } = require('discord.js')
  */
 module.exports = async (client, message, args) => {
   const guild = message.guild
-  const member = member.user.281055644939714560
+  const member = message.mentions.members.first() || guild.members.get(args[0])
   
   async function addRole () {
     roleResolve.forEach(async role => {
