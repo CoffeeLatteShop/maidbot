@@ -98,6 +98,27 @@ module.exports = (client) => {
         { require: ['userID', 'userMention'] }
       ]
     })
+    Router.load('Bonk', {
+      command: ['bonk'],
+      description: "**Bonk'd**",
+      usage: [
+        { require: ['userID', 'userMention'] }
+      ]
+    })
+    Router.load('Loli', {
+      command: ['loli'],
+      description: 'Random loli you can get -w-',
+      usage: [
+        { require: ['userID', 'userMention'] }
+      ]
+    })
+    Router.load('Punch', {
+      command: ['punch', 'tumbuk', 'gebuk'],
+      description: 'Tumbuk lah tumbuk, dapat role Admin aku ! >w<',
+      usage: [
+        { require: ['userID', 'userMention'] }
+      ]
+    })
   })
 
   /**
