@@ -185,7 +185,7 @@ module.exports = (client) => {
       description: 'Banned, tapi boong.',
       moderating: true,
       usage: [
-        { require: ['userID', 'userMention', 'user281055644939714560'] },
+        { require: ['userID', 'userMention'] },
         { optional: ['reason'] }
       ]
     })
