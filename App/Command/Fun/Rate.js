@@ -8,12 +8,6 @@ const Moment = require('moment')
  * @param {string[]} args
  */
 module.exports = (client, message, args) => {
-    const guild = message.guild
-    // Ambil member dari ID dan Mention, apabila gaada yanmg ketemu terakhir ambil
-    // id author/pengirim pesan
-    const member = message.mentions.members.first() ||
-        guild.members.get(args[0]) ||
-        guild.members.get(message.author.id)
     let answers = [
         //Postive
         "💯", "Ok", "Okoklh", "👀", "😍😍", "Ini keren sih", "Kudu di kehi jempol", "Wangy wangy wangy", "Wohoho", "10/10", "Gas favorit!", "Ok punya", "Mana tombol like?",
@@ -26,6 +20,9 @@ module.exports = (client, message, args) => {
     
     let answer = answers[Math.floor(Math.random() * answers.length)];
   
-    message.channel.reply(`${answer}`)
-    })
+    if (args[0]) {
+        message.channel.reply(answer);
+    } else {
+        message.channel.reply("Kasih dong apa yang mau di rate")
+    }
 }
