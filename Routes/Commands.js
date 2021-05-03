@@ -81,7 +81,7 @@ module.exports = (client) => {
       command: ['burn', 'hell'],
       description: 'mau bakar temen? mau bakar diri sendiri?',
       usage: [
-        { optional: ['userID', 'userMention'] }
+        { require: ['userID', 'userMention'] }
       ]
     })
   })
