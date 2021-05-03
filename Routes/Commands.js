@@ -30,6 +30,9 @@ module.exports = (client) => {
       command: ['fun'],
       description: 'null.',
       moderating: false,
+      usage: [
+        { require: ['userID', 'userMention'] }
+      ]
     })
   })
 
