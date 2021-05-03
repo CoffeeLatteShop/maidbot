@@ -219,4 +219,15 @@ module.exports = (client) => {
       description: 'Sebelum masuk di server ini, kamu harus register terlebih dahulu'
     })
   })
+  
+  /**
+   * Donation Group
+   * Ruang donasi
+   */
+  Router.group('Donation').then(Router => {
+    Router.load('Donate', {
+      command: ['donate', 'sedekah', 'tunjangan'],
+      description: 'Menu Donasi untuk kalian yang mau donasi ke <@281055644939714560>'
+    })
+  })
 }
