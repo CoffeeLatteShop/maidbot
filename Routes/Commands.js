@@ -92,21 +92,21 @@ module.exports = (client) => {
       ]
     })
     Router.load('Hug', {
-      command: ['hug'],
+      command: 'hug',
       description: 'Kamu bisa peluk orang lain, atau diri sendiri >w<',
       usage: [
         { require: ['userID', 'userMention'] }
       ]
     })
     Router.load('Bonk', {
-      command: ['bonk'],
+      command: 'bonk',
       description: "**Bonk'd**",
       usage: [
         { require: ['userID', 'userMention'] }
       ]
     })
     Router.load('Loli', {
-      command: ['loli'],
+      command: 'loli',
       description: 'Random loli you can get -w-',
       usage: [
         { require: ['userID', 'userMention'] }
@@ -115,6 +115,13 @@ module.exports = (client) => {
     Router.load('Punch', {
       command: ['punch', 'tumbuk', 'gebuk'],
       description: 'Tumbuk lah tumbuk, dapat role Admin aku ! >w<',
+      usage: [
+        { require: ['userID', 'userMention'] }
+      ]
+    })
+    Router.load('Slap', {
+      command: ['slap', 'nabok', 'tampar'],
+      description: 'Tampar lah tampar, dapat role Admin aku ! >w<',
       usage: [
         { require: ['userID', 'userMention'] }
       ]
