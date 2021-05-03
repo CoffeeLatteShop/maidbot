@@ -15,8 +15,8 @@ module.exports = (client, message, args) => {
     guild.members.get(args[0]) ||
     guild.members.get(message.author.id)
   
-  message.channel.send(`<@${member.user.id}> sangean kebiasaan . . . -w-`)
+  message.channel.send(`<@${member.user.id}> di kiss sama <@${message.author.id}> ><`)
     .then(msg => {
-      message.channel.send(`https://cdn.discordapp.com/attachments/404155927709745156/838809361899585616/07.jpg`)
+      message.channel.send(`https://tenor.com/view/love-cheek-peck-kiss-anime-gif-17382412`)
     })
 }
