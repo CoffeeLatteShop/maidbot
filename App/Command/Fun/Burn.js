@@ -1,4 +1,6 @@
 const { Client, Message } = require('@components/DiscordClient') // eslint-disable-line
+const { RichEmbed } = require('discord.js')
+const Moment = require('moment')
 
 /**
  * @param {Client} client
