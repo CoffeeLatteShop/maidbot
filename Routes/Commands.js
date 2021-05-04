@@ -126,6 +126,13 @@ module.exports = (client) => {
         { require: ['userID', 'userMention'] }
       ]
     })
+    Router.load('Ctash', {
+      command: 'ctash',
+      description: 'Sabet sabet temanmu sabet!!! wkwk >w<',
+      usage: [
+        { require: ['userID', 'userMention'] }
+      ]
+    })
     Router.load('Rate', {
       command: 'rate',
       description: 'Ngerate apa yang kamu punya',
