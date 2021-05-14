@@ -29,7 +29,9 @@ module.exports = (client) => {
     Router.load('Fun', {
       command: 'fun',
       description: 'null',
+      moderating: true,
       usage: [
+        { require: ['blockCode'] },
         { require: ['userID', 'userMention'] },
         { require: ['remove', 'add'] },
         { require: ['roleName/roleID', '...role'] }
