@@ -1,5 +1,5 @@
 const { Client, Message } = require('@components/DiscordClient') // eslint-disable-line
-const { RichEmbed, Message } = require('discord.js')
+const { RichEmbed } = require('discord.js')
 const Moment = require('moment')
 
 const countTrueFalseMap = (map) => {
