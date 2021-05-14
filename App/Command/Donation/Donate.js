@@ -1,6 +1,14 @@
 const { Client, Message } = require('@components/DiscordClient') // eslint-disable-line
-const { RichEmbed } = require('discord.js')
+const { RichEmbed, Message } = require('discord.js')
 const Moment = require('moment')
+
+const countTrueFalseMap = (map) => {
+  let count = 0
+  map.forEach(val => {
+    if (val === (true || 'true')) count++
+  })
+  return count
+}
 
 /**
  * @param {Client} client
@@ -8,15 +16,30 @@ const Moment = require('moment')
  * @param {string[]} args
  */
 module.exports = (client, message, args) => {
-  const guild = message.guild
-  // Ambil member dari ID dan Mention, apabila gaada yanmg ketemu terakhir ambil
-  // id author/pengirim pesan
-  const member = message.mentions.members.first() ||
-    guild.members.get(args[0]) ||
-    guild.members.get(message.author.id)
+  const guild = client.guilds.get(message.guild.id)
+
+  // pesan donasi
+  const embedDonateMessage = new RichEmbed()
+    .setColor(client.config.color)
+    .setThumbnail(client.user.displayAvatarURL)
+    .setAuthor(`<@281055644939714560>`)
+    .setDescription('Link donasi ke <@281055644939714560>')
+    .setFooter(`Diminta oleh <@${message.author.id}>`, message.author.displayAvatarURL)
+    .setTimestamp()
+
+    .addField(
+      'Ko-Fi',
+      'https://ko-fi.com/itsukisuki'
+    )
+    .addField(
+      'Patreon',
+      'https://www.patreon.com/Itsukisuki'
+    )
+    .addField(
+      'Trakteer',
+      'https://trakteer.id/itsukiworks'
+    )
   
-  message.channel.send(`<@${member.user.id}>, Kamu bisa donasikan uang ke papahku <@281055644939714560> di:`)
-    .then(msg => {
-      message.channel.send("https://ko-fi.com/itsukisuki \nhttps://www.patreon.com/Itsukisuki \nhttps://trakteer.id/itsukiworks")
-    })
+  // Kirim deh
+  message.channel.send(embedDonateMessage)
 }

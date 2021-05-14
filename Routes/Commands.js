@@ -26,6 +26,15 @@ module.exports = (client) => {
         { require: ['blockCode'] }
       ]
     })
+    Router.load('Fun', {
+      command: 'fun',
+      description: 'null',
+      usage: [
+        { require: ['userID', 'userMention'] },
+        { require: ['remove', 'add'] },
+        { require: ['roleName/roleID', '...role'] }
+      ]
+    })
   })
 
   /**
@@ -136,6 +145,13 @@ module.exports = (client) => {
     Router.load('Rate', {
       command: 'rate',
       description: 'Ngerate apa yang kamu punya',
+      usage: [
+        { require: ['reason'] }
+      ]
+    })
+    Router.load('When', {
+      command: ['when', 'kapan'],
+      description: 'Perkirain apa yang mau kalian perkirakan wkwk',
       usage: [
         { require: ['reason'] }
       ]
