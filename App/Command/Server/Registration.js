@@ -38,17 +38,17 @@ module.exports = async (client, message, args) => {
             authorMsg.send('Verifikasi ditolak! Silahkan register kembali.')
             return undefined
           } else {
-            await guild.members.get(author.id).addRole(ijoIjo)
             authorMsg.send(
               'Anda telah berhasil terverifikasi. Selamat bermain, dan jangan lupa untuk selalu cek **<#842131373577076746>** untuk peraturan server ini dan **<#842111073565540372>** untuk info penting dari server ini.'
             )
+            await guild.members.get(author.id).addRole(ijoIjo)
             return undefined
           }
         })
         /* eslint-disable */
         .catch(err => {
           // console.log(err)
-          authorMsg.send('Waktu habis! Silahkan register kembali.')
+          authorMsg.send('Waktu habis!')
         })
         /* eslint-enable */
     })
