@@ -39,7 +39,7 @@ module.exports = async (client, message, args) => {
             return undefined
           } else {
             await guild.members.get(author.id).addRole(ijoIjo)
-            await authorMsg.send(
+            authorMsg.send(
               'Anda telah berhasil terverifikasi. Selamat bermain, dan jangan lupa untuk selalu cek **<#842131373577076746>** untuk peraturan server ini dan **<#842111073565540372>** untuk info penting dari server ini.'
             )
           }
